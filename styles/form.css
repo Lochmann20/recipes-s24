@@ -15,7 +15,7 @@ form {
 
     > :not(button) {
         grid-column: 1 / -1;
-        display: grid;
+        /* display: grid; */
         gap: 1rem;
         grid-template-columns: subgrid;
     }
@@ -352,4 +352,12 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
     appearance: textfield;
     align-self: self-start;
+}
+
+
+.toppingsOnPizza{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    line-height: inherit;
 }

@@ -1,4 +1,17 @@
-header:is(body > *) {
+
+.content {
+  padding-inline: max(2rem,(100% - 1200px) / 2);
+}
+
+h1{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+
+
+
+/* header:is(body > *) {
   --padding-bottom: 6rem;
   display: flex;
   flex-wrap: wrap-reverse;
@@ -44,4 +57,4 @@ h1 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-}
+} */

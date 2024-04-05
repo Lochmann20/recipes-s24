@@ -9,8 +9,7 @@
   <body>
     <header>
       <div class="content">
-        <h1><span class="text-gradient">Recipes</span>.whatever</h1>
-        <p>Yummi, yummi recipes</p>
+        <h1><span class="text-gradient">Recipes</span></h1>
         <a href="#main">Add your recipe</a>
       </div>
     </header>
@@ -18,10 +17,7 @@
     <main id="main">
       <form>
         <div class="form-group">
-          <label for="name"
-            >Name
-            <span class="hint">Enter the name of the recipe</span>
-          </label>
+          <label for="name">Name<span class="hint">Enter the name of the recipe</span></label>
           <input
             id="name"
             type="text"
@@ -122,26 +118,20 @@
             </label>
           </div>
         </div>
-        <div>
+
+        <div class="toppings">
           <h2>Hvad vil du have på din pizza?</h2>
           <div>
-            <label><input name="topping" value="ost" type="radio" /> Ost</label>
+            <label class="toppingsOnPizza"><input name="topping" value="ost" type="radio" /> Ost</label>
           </div>
           <div>
-            <label
-              ><input name="topping" value="mælk" type="radio" /> Mælk</label
-            >
+            <label class="toppingsOnPizza"><input name="topping" value="mælk" type="radio" /> Mælk</label>
           </div>
           <div>
-            <label
-              ><input name="topping" value="tomat" type="radio" /> Tomat</label
-            >
+            <label class="toppingsOnPizza"><input name="topping" value="tomat" type="radio" /> Tomat</label>
           </div>
           <div>
-            <label
-              ><input name="topping" value="kartoffel" type="radio" />
-              Kartiffelo</label
-            >
+            <label class="toppingsOnPizza"><input name="topping" value="kartoffel" type="radio" />Kartiffelo</label>
           </div>
         </div>
 
@@ -149,6 +139,9 @@
       </form>
       <section class="recipes"></section>
     </main>
+
+
+
     <template>
       <article class="card">
         <header>
