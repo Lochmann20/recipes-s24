@@ -62,7 +62,7 @@ function handleSubmit() {
       name: formData.get("name"),
       description: formData.get("description"),
       ingredients: formData.get("ingredients").split("\n"),
-      serves: formData.get("serves"),
+      services: formData.get("serves"),
       allergens: formData.get("allergens").split("\n"),
       diet: formData.get("diet"),
       studentFriendly: formData.get("studentFriendly"),
