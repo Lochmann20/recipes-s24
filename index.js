@@ -56,9 +56,9 @@ function handleSubmit() {
     //stop refresh
     e.preventDefault();
     const formData = new FormData(form);
-    console.log(formData.get("ingredients").split("\n"));
+    console.log(formData.getAll("topping"));
 
-    await createRecipe({
+    /*  await createRecipe({
       name: formData.get("name"),
       description: formData.get("description"),
       ingredients: formData.get("ingredients").split("\n"),
@@ -68,7 +68,7 @@ function handleSubmit() {
       studentFriendly: formData.get("studentFriendly"),
       origin: formData.get("origin"),
     });
-    showRecipes();
+    showRecipes(); */
   });
 }
 handleSubmit();
